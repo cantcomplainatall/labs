@@ -5,54 +5,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Програмування в інтернет</title>
     <style>
+        
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #e0e5ec;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
         header {
-            background: #333;
-            color: white;
-            padding: 15px;
+            background: #f0f2f7;
+            color: #333;
+            padding: 20px 50px;
             text-align: center;
+            border-radius: 15px;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
         }
+        header h1 {
+            margin: 0;
+            font-size: 32px;
+        }
+        
+       
         nav {
-            background: #444;
-            padding: 10px;
+            background: #f0f2f7;
+            border-radius: 12px;
+            padding: 15px;
+            margin-top: 20px;
+            width: 80%;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
         }
         nav ul {
             list-style: none;
             padding: 0;
         }
         nav ul li {
-            display: inline;
+            display: inline-block;
             margin-right: 15px;
         }
         nav ul li a {
-            color: white;
+            color: #333;
             text-decoration: none;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: all 0.3s;
         }
+        nav ul li a:hover {
+            background: #d0d9e2;
+            box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2), inset -5px -5px 10px rgba(255, 255, 255, 0.7);
+        }
+
+      
         main {
-            padding: 20px;
+            width: 80%;
+            margin-top: 40px;
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
         }
         article {
-            background: white;
-            padding: 15px;
-            margin-bottom: 20px;
-            border-radius: 5px;
+            background: #f0f2f7;
+            border-radius: 12px;
+            padding: 20px;
+            width: 60%;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
         }
         aside {
-            background: #eee;
-            padding: 15px;
-            border-radius: 5px;
+            background: #f0f2f7;
+            border-radius: 12px;
+            padding: 20px;
+            width: 35%;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
         }
+
+        
         footer {
-            background: #333;
-            color: white;
+            background: #f0f2f7;
+            color: #333;
             text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+            padding: 15px;
+            margin-top: 40px;
+            border-radius: 12px;
+            box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.1), -8px -8px 15px rgba(255, 255, 255, 0.7);
+        }
+
+        
+        h2 {
+            color: #333;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        /* Список курсів */
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        ul li a {
+            color: #333;
+            font-size: 16px;
+            padding: 8px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        ul li a:hover {
+            background: #d0d9e2;
+            box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.2), inset -3px -3px 6px rgba(255, 255, 255, 0.7);
         }
     </style>
 </head>
@@ -67,16 +137,26 @@
             <li>
                 Лабораторні роботи
                 <ol>
-                    <li><a href="#labs">Lab1 - Назва лаб. роботи №1</a></li>
-                    <li><a href="#labs">Lab2 - Назва лаб. роботи №2</a></li>
-                    <li><a href="#labs">Lab3 - Назва лаб. роботи №3</a></li>
+                    <li><a href="https://lab1-burka.netlify.app/">Lab1 - Створення веб-сторінки із статичним текстом</a></li>
+                    <li><a href="https://lab2-burka.netlify.app/">Lab2 - Гіпертекстові посилання. Створення групи веб-сторінок з меню.</a></li>
+                    <li><a href="https://lab3-burka.netlify.app/">Lab3 - HTML-форми. Робота з Git гілками.</a></li>
+                    <li><a href="https://lab4-burka.netlify.app/">Lab4 - Створення веб-сторінки з графічними елементами та мультимедіа</a></li>
+                    <li><a href="https://lab5-burka.netlify.app/">Lab5 - Модулі СSS. Робота з блочною моделлю. Інструменти веб-розробки Developer tools.</a></li>
+                    <li><a href="https://lab6-burka.netlify.app/">Lab6 - Модулі СSS: робота з Flexbox</a></li>
+                    <li><a href="https://lab7-burka.netlify.app/">Lab7 - Використання CSS Grid Layout, transitions та animations.</a></li>
+                    <li><a href="https://lab8-burka.netlify.app/">Lab8 - Застосування медіа-запитів (Media Queries) для створення адаптивної верстки</a></li>
+                    <li><a href="https://lab9-burka.netlify.app/">Lab9 - Cтворення веб-сторінки з плаваючими, багатоколонковими та модальними елементами</a></li>
+                    <li><a href="https://lab10-burka.netlify.app/">Lab10 - Використання SCSS для створення адаптивних стилів</a></li>
+                    <li><a href="https://lab11-burka.netlify.app/">Lab11 - Особливості ініціалізації змінних в JavaScript</a></li>
                 </ol>
             </li>
             <li>
                 Практичні роботи
                 <ol>
-                    <li><a href="#practices">Практична робота1 - Назва пр. роботи №1</a></li>
-                    <li><a href="#practices">Практична робота2 - Назва пр. роботи №2</a></li>
+                    <li><a href="https://pr1-burka.netlify.app/">Практична робота 1 - Побудова карт-зображень в HTML</a></li>
+                    <li><a href="https://pr2-burka.netlify.app/">Практична робота 2 - Побудова таблиць в HTML</a></li>
+                    <li><a href="https://pr3-burka.netlify.app/">Практична робота 3 - Розміщення проекту в репозиторії GitHub</a></li>
+                    <li><a href="https://pr4-burka.netlify.app/">Практична робота 4 - Методологія BEM. Написання якісного коду.</a></li>
                 </ol>
             </li>
         </ul>
@@ -97,17 +177,16 @@
         <aside>
             <h2>Інші курси</h2>
             <ul>
-                <li><a href="https://qwe">Математика</a></li>
-                <li><a href="https://qwe">Фізика</a></li>
-                <li><a href="https://qwe">Хімія</a></li>
-                <li><a href="https://qwe">Історія</a></li>
-                <li><a href="https://qwe">Психологія</a></li>
+                <li><a href="https://qwe">Електрорадіовимірвання</a></li>
+                <li><a href="https://qwe">Економіка</a></li>
+                <li><a href="https://qwe">Українська мова</a></li>
+                <li><a href="https://qwe">Архітектура комп'ютерів</a></li>
             </ul>
         </aside>
     </main>
     
     <footer>
-        <p>&copy; Copyright 2025 by Byrka Serhii!!!!! . All rights reserved.</p>
+        <p>&copy; Copyright 2025 by Byrka Serhii. All rights reserved.</p>
     </footer>
 </body>
 </html>
