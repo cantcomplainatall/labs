@@ -1,16 +1,38 @@
-console.log("Лабораторна робота #13: Особливості ініціалізації змінних Javascript");
+var a = 10;
+console.log(a);
+let b = 20;
+console.log(b);
+const c = 30;
+console.log(c);
 
-console.log("Завдання 1: Аналіз hoisting");
-//Передбачте результат виконання, потім запустіть код та поясніть в коментарі коментар.
 
-console.log("Завдання 2: Робота з областю видимості (scope)");
-//Передбачте, які змінні будуть доступні після if-блоку. Додайте відповідний коментар.
+function testScope() {
+    var x = 5;
+    let y = 10;
+    const z = 15;
 
-console.log("Завдання 3: Робота з типами даних");
-//Передбачте результати виконання коду, запустіть код та поясніть його. Додайте відповідний коментар.
+    console.log(x);
+    console.log(y);
+    console.log(z);
+}
 
-console.log("Завдання 4: const та об'єкти");
-//Передбачте результати виконання коду, запустіть код та поясніть його. Додайте відповідний коментар.
+testScope();
 
-console.log("Завдання 5: Визначення типу даних");
-//Передбачте результати виконання коду, запустіть код та поясніть його. Додайте відповідний коментар.
+console.log(5 + "5");
+console.log("5" - 2);
+console.log(true + false);
+console.log(null + 1);
+console.log(undefined + 1);
+console.log(0 == false);
+console.log(0 === false);
+
+var person = {
+    name: "John",
+    age: 30
+};
+
+person.age = 31;
+person.city = "New York";
+console.log(person);
+
+person = { name: "Alice", age: 25 }; 
