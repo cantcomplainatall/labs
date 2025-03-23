@@ -1,48 +1,101 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IT коледж Львівської політехніки</title>
+    <title>Політехніка</title>
     <style>
+        #logos_container {
+            padding: 1rem 0;
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header,
+        section,
+        div {
+            display: block;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            color: #333;
+            background-color: #fafafa;
             margin: 0;
-            padding: 0;
         }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 20px;
-            text-align: center;
+
+        html {
+            font-size: 10px;
         }
+
         .container {
-            width: 80%;
+            padding: 0 20px;
             margin: 0 auto;
+            max-width: 1200px;
         }
-        .region-logos {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin-top: 20px;
+
+        .clearfix:after,
+        .container:after,
+        .row:after {
+            display: table;
+            content: "";
+            clear: both;
         }
+
+        .row {
+            margin: 0 -15px;
+        }
+
         .col-xs-4 {
-            width: 30%;
+            float: left;
+            width: 33.333333%;
+            position: relative;
+            min-height: 1px;
+            padding: 0 15px;
+            transition: transform 0.3s ease;
         }
-        .img-responsive {
-            width: 100%;
-            height: auto;
+
+        #logos_container a {
+            display: block;
+            text-align: center;
+            margin-bottom: 15px;
         }
+
         a {
             text-decoration: none;
+            color: #337ab7;
+            transition: color 0.3s ease-out;
         }
-        a:hover img {
-            opacity: 0.8;
-            transition: opacity 0.3s;
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        #logos_container img {
+            margin: 0 auto;
+            width: 120px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        #logos_container img:hover {
+            transform: scale(1.1);
+        }
+
+        .img-responsive {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        img {
+            vertical-align: middle;
+            border: 0;
         }
     </style>
 </head>
+
 <body>
     <header id="logos_container" role="link" aria-label="Featured University Units">
         <div class="container">
@@ -50,9 +103,21 @@
                 <section id="block-selectedunits" class="block block-block-content clearfix">
                     <div class="field field--name-body field--type-text-with-summary field--label-hidden field--item">
                         <div class="row">
-                            <div class="col-xs-4"><a href="http://tsus.lpnu.ua/"><img alt="Логотип Tech Startup School" class="img-responsive" src="/themes/lpnu/images/LPNU_logo_tech-startup-school.png" typeof="foaf:Image"></a></div>
-                            <div class="col-xs-4"><a href="https://techbs.lpnu.ua/"><img alt="Логотип Tech Business School" class="img-responsive" src="/themes/lpnu/images/LPNU_logo_tech-business-school.png" typeof="foaf:Image"></a></div>
-                            <div class="col-xs-4"><a href="http://tsus.lpnu.ua/sid"><img alt="Логотип наукового парку SID City" class="img-responsive" src="/themes/lpnu/images/LPNU_logo_SID-city-scientific-park.png" typeof="foaf:Image"></a></div>
+                            <div class="col-xs-4">
+                                <a href="http://tsus.lpnu.ua/">
+                                    <img alt="Логотип Tech Startup School" class="img-responsive" src="1.png" typeof="foaf:Image">
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="https://techbs.lpnu.ua/">
+                                    <img alt="Логотип Tech Business School" class="img-responsive" src="2.png" typeof="foaf:Image">
+                                </a>
+                            </div>
+                            <div class="col-xs-4">
+                                <a href="http://tsus.lpnu.ua/sid">
+                                    <img alt="Логотип наукового парку SID City" class="img-responsive" src="3.png" typeof="foaf:Image">
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -60,4 +125,5 @@
         </div>
     </header>
 </body>
+
 </html>
